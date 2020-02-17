@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+ display: flex;
+ font-size: 16px;
+ flex-flow: column;
+ height: 100vh;
+}
+
+.header {
+    background: green;
+    height: 3rem;
+}
+.container {
+    background: chocolate;
+    display: flex;
+    height: inherit;
+}
+.footer {
+    background:cyan; 
+    height: 6rem;
+    margin-top: auto;
+    
+}
+
+.menu {
+       display: flex;
+    }
+.menu-item{
+    outline:1px solid black;
+    list-style: none;
+    flex: 1;
+    line-height: 3rem;
+    
+    text-align: center;
+}
+.menu-item:hover{
+    flex: 8%;
+    transition: flex .10s;
+}
+
+.content {
+    background: yellow;
+    flex: 1 1 auto;
+}
+.aside {
+    background: purple;
+    flex: 0 0 25%;
+}
